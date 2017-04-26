@@ -19,6 +19,7 @@ public:
     string m_str;
     A(string str){m_str = str;}
     string ToString() {return m_str;}
+    string ToString() const  {return m_str;}  //加上此行后就不报错了
     bool operator<(const A &rhs) const {return true;} //为了能使用set
 };
 
